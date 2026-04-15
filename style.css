@@ -1,5 +1,6 @@
 body{
 background-image: url('./assets/background-blue.png');
+background-size: cover;
 }
 
 :root {
