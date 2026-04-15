@@ -1,0 +1,31 @@
+body{
+background-image: url('./assets/background-blue.png');
+}
+
+
+ #container {
+  width: 100%px;
+  max-width: 588px;
+  margin: auto;
+  height: 712px;
+  padding: 0 24px;
+}
+
+
+#profile img{
+   width: 112px;
+  margin: auto;
+}
+#profile{
+
+    text-align: center;
+}
+#profile p {
+ font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-bottom: 24px;
+  color: #ffffff;
+  
+}
+
