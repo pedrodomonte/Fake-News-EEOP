@@ -107,16 +107,16 @@ list-style: none;
   
 }
 
-ul li{
+#links li{
    opacity: 0;
   animation: slideUp 0.5s ease forwards;
 }
 
-ul li:nth-child(1) { animation-delay: 0.1s; }
-ul li:nth-child(2) { animation-delay: 0.2s; }
-ul li:nth-child(3) { animation-delay: 0.3s; }
-ul li:nth-child(4) { animation-delay: 0.4s; }
-ul li:nth-child(5) { animation-delay: 0.5s; }
+#links li:nth-child(1) { animation-delay: 0.1s; }
+#links li:nth-child(2) { animation-delay: 0.2s; }
+#links li:nth-child(3) { animation-delay: 0.3s; }
+#links li:nth-child(4) { animation-delay: 0.4s; }
+#links li:nth-child(5) { animation-delay: 0.5s; }
 
 @keyframes slideUp {
   from {
@@ -130,7 +130,7 @@ ul li:nth-child(5) { animation-delay: 0.5s; }
 }
 
 
-ul li a {
+#links li a {
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -152,20 +152,25 @@ ul li a {
 
   color:#ffffff;
 
-  font-size: 15px;
+  font-size: 14px;
 
     cursor: pointer;
   font-weight: 600;
 }
-ul li a i {
+#links li a i {
   transition: transform 0.2s;
+  opacity: 0.8
 }
 
-ul li a:hover i {
+#links li a:active {
+  transform: scale(0.97);
+}
+
+#links li a:hover i {
   transform: rotate(10deg) scale(1.2);
 }
 
-ul li a:hover {
+#links li a:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
    transform: translateY(-5px) scale(1.02);
@@ -179,6 +184,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #ffffff;
+  opacity: 0.7;
 }
 
 footer a {
@@ -186,3 +192,77 @@ footer a {
   font-weight: 500;
 }
 
+.conteudo {
+  display: none;
+  margin-top: 20px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.fechar {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content {
+ background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+
+  position: absolute;
+
+  width: 75%;
+  height: 80%;
+
+  top: 40%; /* 🔥 sobe a janela */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#conteudoModal {
+  flex: 1;
+  display: flex;
+}
+
+#conteudoModal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    height: 90%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  #barraTopo {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
