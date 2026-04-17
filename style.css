@@ -59,11 +59,13 @@ min-height: 100vh;
 }
 
 ul{
+  padding: 0;
 list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 24px;
+  border: 2px solid red;
 }
 
 ul li a {
