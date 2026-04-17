@@ -1,6 +1,13 @@
 body{
 background-image: url('./assets/background-blue.png');
 background-size: cover;
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
 }
 
 :root {
@@ -23,10 +30,9 @@ background-size: cover;
 }
 
  #container {
-  width: 100%px;
+   width: 100%;
   max-width: 588px;
-  margin: auto;
-  height: 712px;
+  margin: 0 auto;
   padding: 0 24px;
 }
 
@@ -75,7 +81,9 @@ ul li a {
   transition: all 0.3s;
   padding: 24px 0;
 
-  color:#ffffff
+  color:#ffffff;
+
+  font-size: 15px;
 }
 
 footer {
