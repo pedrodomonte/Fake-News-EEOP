@@ -30,8 +30,8 @@ background-size: cover;
 }
 
  #container {
-   width: 100%;
-  max-width: 588px;
+   max-width: 588px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 24px;
 }
