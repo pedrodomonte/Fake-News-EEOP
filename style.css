@@ -5,6 +5,9 @@ background-size: cover;
  display: flex;
   justify-content: center;
   align-items: center;
+
+min-height: 100vh;
+
   height: 100vh;
   margin: 0;
 
@@ -34,12 +37,14 @@ background-size: cover;
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
+  border: 2px solid red;
 }
 
 
 #profile img{
    width: 112px;
   margin: auto;
+  border: 2px solid red;
 }
 #profile{
 
